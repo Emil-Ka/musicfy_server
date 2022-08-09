@@ -5,13 +5,9 @@
 		"node": "16.x"
 	},
 	"description": "",
-	"main": "./src/index.js",
+	"main": "./index.js",
 	"scripts": {
-		"start": "node ./index.js",
-		"build": "tsc",
-		"dev": "nodemon",
-		"lint": "eslint ./src/**",
-		"lint:fix": "eslint ./src/** --fix"
+		"start": "node ./index.js"
 	},
 	"keywords": [
 		"server",
