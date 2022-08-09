@@ -21,6 +21,8 @@ const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const ApiError_1 = require("../../error/ApiError");
 const models_1 = require("../../models");
 const user_controller_interfaces_1 = require("./user.controller.interfaces");
+const dotenv_1 = require("dotenv");
+(0, dotenv_1.config)();
 function generateJWT(id, email, role = user_controller_interfaces_1.Roles.USER) {
     const token = jsonwebtoken_1.default.sign({ id, email, role }, process.env.SECRET_KEY, { expiresIn: '24h' });
     return token;

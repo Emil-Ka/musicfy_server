@@ -21,6 +21,8 @@ const path_1 = __importDefault(require("path"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const ApiError_1 = require("../error/ApiError");
 const models_1 = require("../models");
+const dotenv_1 = require("dotenv");
+(0, dotenv_1.config)();
 var Roles;
 (function (Roles) {
     Roles["USER"] = "USER";

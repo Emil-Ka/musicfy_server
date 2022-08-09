@@ -8,6 +8,8 @@ require("express");
 require("../controllers/user/user.controller.interfaces");
 const ApiError_1 = require("../error/ApiError");
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
+const dotenv_1 = require("dotenv");
+(0, dotenv_1.config)();
 function checkRole(roles) {
     return function (req, res, next) {
         if (req.method === 'OPTIONS') {
